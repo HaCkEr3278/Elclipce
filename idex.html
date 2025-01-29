@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eclipse</h1>
+        <div class="search-bar" id="searchBar">
+            <input type="text" id="searchInput" placeholder="Search Bing or Type a URL">
+        </div>
+        <button class="settings-button" onclick="openInAboutBlank()">Open in About:Blank</button>
+        <div class="menu">
+            <a href="#" data-tab="home">Home</a>
+            <a href="#" data-tab="games">Games</a>
+            <a href="#" data-tab="apps">Apps</a>
+            <a href="#" data-tab="chat">Chat</a>
+            <a href="#" data-tab="proxies">Proxies</a>
+            <a href="#" data-tab="about-us">About Us</a>
+            <a href="#" data-tab="settings">Settings</a>
+        </div>
+        <div id="home" class="tab-content active">
+            <!-- Only one search bar here -->
+        </div>
+
+        <!-- Container for the search results -->
+        <div class="results-container" id="resultsContainer"></div>
+
+        <!-- Tab content -->
+        <div id="games" class="tab-content">
+            <h2>Games Tab</h2>
+            <div class="games-list">
+                <a href="https://www.decisionproblem.com/paperclips/index2.html" target="_blank">Paperclips</a>
+                <a href="https://testtubegames.com/bondbreaker3.html" target="_blank">Bond Breaker 3</a>
+                <a href="https://www.culinaryschools.org/kids-games/watermelon-game/" target="_blank">Watermelon Game</a>
+                <a href="https://ellisonleao.github.io/clumsy-bird/" target="_blank">Clumsy Bird</a>
+                <a href="https://codeincomplete.com/games/racer/" target="_blank">Racer</a>
+                <a href="https://superdevresources.com/open-source-html5-games/#:~:text=Full%20Game%20Source%20with%20Game%20Assets%20%28Premium%29%201,5%205.%20Neon%20Bricks%20%E2%80%93%20HTML5%20Game%20" target="_blank">15 HTML Games</a>
+                <a href="https://firespread01.github.io/" target="_blank">Fire Spread</a>
+                <a href="https://d1tm91r4ytbt54.cloudfront.net/b93894a7-b29b-4edc-8866-c733ff7d695b/1671689486925/retrobowl/index.html" target="_blank">Retro Bowl</a>
+                <a href="https://sites.google.com/view/ezclasswork/?authuser=0" target="_blank">EZ Classwork</a>
+                <a href="https://sites.google.com/lbschools.net/aydens-website/welcome" target="_blank">Aydens Website</a>
+            </div>
+        </div>
+        <div id="apps" class="tab-content">
+            <h2>Apps Tab</h2>
+            <p>Some content for the Apps tab...</p>
+        </div>
+        <div id="chat" class="tab-content">
+            <h2>Chat Tab</h2>
+            <p>Some content for the Chat tab...</p>
+        </div>
+        <div id="proxies" class="tab-content">
+            <h2>Proxies Tab</h2>
+            <div class="proxies-list">
+                <div>
+                    <a href="#" class="proxy-folder" onclick="toggleProxyLinks('accelerationLinks')">Acceleration Links</a>
+                    <div class="proxy-links" id="accelerationLinks">
+                        <a href="https://acceleration1.example.com" target="_blank">Acceleration Link 1</a>
+                        <a href="https://acceleration2.example.com" target="_blank">Acceleration Link 2</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="proxy-folder" onclick="toggleProxyLinks('shadowLinks')">Shadow Links</a>
+                    <div class="proxy-links" id="shadowLinks">
+                        <a href="https://shadow1.example.com" target="_blank">Shadow Link 1</a>
+                        <a href="https://shadow2.example.com" target="_blank">Shadow Link 2</a>
+                    </div>
+                </div>
+                <!-- Add more proxy folders as needed -->
+            </div>
+        </div>
+        <div id="about-us" class="tab-content">
+            <h2>About Us Tab</h2>
+            <p>Some content for the About Us tab...</p>
+        </div>
+        <div id="settings" class="tab-content">
+            <h2>Settings Tab</h2>
+            <p>Settings content...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
